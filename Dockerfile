@@ -8,7 +8,7 @@ LABEL maintainer="chbmb"
 
 # environment settings
 ARG DEBIAN_FRONTEND="noninteractive"
-ARG koko_RELEASE
+ARG KOKO_RELEASE
 
 RUN \
  echo "**** install packages ****" && \
