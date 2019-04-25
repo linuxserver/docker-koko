@@ -1,0 +1,29 @@
+---
+
+# jenkins variables
+project_name: docker-koko
+external_type: github_stable
+release_type: stable
+release_tag: latest
+ls_branch: master
+repo_vars:
+  - EXT_GIT_BRANCH = 'master'
+  - EXT_USER = 'm0ngr31'
+  - EXT_REPO = 'koko'
+  - BUILD_VERSION_ARG = 'KOKO_COMMIT'
+  - LS_USER = 'linuxserver'
+  - LS_REPO = 'docker-koko'
+  - CONTAINER_NAME = 'koko'
+  - DOCKERHUB_IMAGE = 'linuxserver/koko'
+  - DEV_DOCKERHUB_IMAGE = 'lsiodev/koko'
+  - PR_DOCKERHUB_IMAGE = 'lspipepr/koko'
+  - DIST_IMAGE = 'ubuntu'
+  - MULTIARCH='true'
+  - CI='true'
+  - CI_WEB='true'
+  - CI_PORT='8000'
+  - CI_SSL='true'
+  - CI_DELAY='120'
+  - CI_DOCKERENV='TZ=US/Pacific'
+  - CI_AUTH='user:password'
+  - CI_WEBPATH=''

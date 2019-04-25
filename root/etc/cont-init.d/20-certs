@@ -1,0 +1,12 @@
+#!/usr/bin/with-contenv bash
+
+# make our folders
+[[ ! -d /config/keys/koko ]] && \
+mkdir -p \
+	/config/keys/koko
+
+# create keys
+[[ ! -e /config/keys/koko/certificate.pem ]] && \
+	openssl req -x509 -nodes -days 3650 \
+	-newkey rsa:2048 -keyout /config/keys/koko/private-key.pem  -out /config/keys/koko/certificate.pem \
+	-subj "/CN=koko"
